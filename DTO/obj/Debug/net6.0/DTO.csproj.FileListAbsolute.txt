@@ -1,0 +1,12 @@
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\bin\Debug\net6.0\DTO.deps.json
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\bin\Debug\net6.0\DTO.dll
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\bin\Debug\net6.0\DTO.pdb
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.dll
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\refint\DTO.dll
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.pdb
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\ref\DTO.dll
