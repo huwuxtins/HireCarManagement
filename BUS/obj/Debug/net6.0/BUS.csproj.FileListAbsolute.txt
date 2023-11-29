@@ -15,3 +15,4 @@ D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\BUS\bin\Debug\net6
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\BUS\bin\Debug\net6.0\DAO.pdb
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\BUS\bin\Debug\net6.0\DTO.pdb
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\BUS\obj\Debug\net6.0\BUS.csproj.CopyComplete
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\BUS\obj\Debug\net6.0\BUS.sourcelink.json

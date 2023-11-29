@@ -20,12 +20,13 @@ namespace DAO
         #region 2. create account for customer
         public void registerAccountCustomer(DTO_Customer customer)
         {
-            string statement = "registerAccountCustomer @ID , @Name , @PhoneNumber , @Address";
+            string statement = "registerAccountCustomer @ID , @Name , @PhoneNumber , @Address , @CCCD";
             DataProvider.Instance.ExecuteStoredProcedure(statement, new object[] { 
                 customer.Id, 
                 customer.Name, 
                 customer.PhoneNumber, 
-                customer.Address});
+                customer.Address,
+                customer.CCCD});
         }
         #endregion
 
@@ -42,12 +43,13 @@ namespace DAO
         #region 4. update account for customer
         public void updateAccountCustomer(DTO_Customer customer)
         {
-            string statement = "updateAccountCustomer @ID , @Name , @PhoneNumber , @Address";
+            string statement = "updateAccountCustomer @ID , @Name , @PhoneNumber , @Address , @CCCD";
             DataProvider.Instance.ExecuteStoredProcedure(statement, new object[] {
                 customer.Id,
                 customer.Name,
                 customer.PhoneNumber,
-                customer.Address});
+                customer.Address,
+                customer.CCCD});
         }
         #endregion
 
@@ -69,6 +71,14 @@ namespace DAO
                 return true;
             }
             return false;
+        }
+        #endregion
+
+        #region 7. Get Customer by CCCD
+        public DataTable getCustomerByCCCD(string cccd)
+        {
+            string statement = "getCustomerByCCCD @cccd";
+            return DataProvider.Instance.ExecuteStoredProcedureSelect(statement, new object[] { cccd });
         }
         #endregion
     }

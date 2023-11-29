@@ -16,6 +16,7 @@ namespace DTO
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public string ROLE { get; set; }
 
         public DTO_Employee(string name, string email, string password)
         {
@@ -28,6 +29,16 @@ namespace DTO
         {
             Email = email;
             Password = password;
+            ROLE = "ROLE_EMPLOYEE";
+        }
+
+        public DTO_Employee(Guid id, string name, string email, string password, string rOLE)
+        {
+            Id = id;
+            Name = name;
+            Email = email;
+            Password = password;
+            ROLE = rOLE;
         }
     }
 }

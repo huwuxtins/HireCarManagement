@@ -14,7 +14,9 @@ namespace DAO
         public string Type { get; set; }
         public string Brand { get; set; }
         public bool IsFree { get; set; }
+        public int Price { get; set; }
         public string ImageLink { get; set; }
+        public Guid FeatureId { get; set; }
         public bool HaveCamera { get; set; }
         public bool HaveMap { get; set; }
         public bool HaveFlyWindown { get; set; }
@@ -25,8 +27,10 @@ namespace DAO
         public bool HaveSpeedWarning { get; set; }
         public bool HaveRearCamera { get; set; }
 
+        public DTO_Car() { }
+
         public DTO_Car(Guid id, string name, string fuel, string type, string brand, 
-            bool isFree, string imageLink, bool haveCamera, bool haveMap,
+            bool isFree, int price, string imageLink, Guid FeatureId, bool haveCamera, bool haveMap,
             bool haveFlyWindown, bool haveUSB, bool haveBluetooth, bool haveTruckContainer, 
             bool haveCamera360, bool haveSpeedWarning, bool haveRearCamera)
         {
@@ -36,6 +40,8 @@ namespace DAO
             Type = type;
             Brand = brand;
             IsFree = isFree;
+            Price = price;
+            this.FeatureId = FeatureId;
             ImageLink = imageLink;
             HaveCamera = haveCamera;
             HaveMap = haveMap;

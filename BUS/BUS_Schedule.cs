@@ -41,5 +41,26 @@ namespace BUS
             dAO_Schedule.deleteSchedule(id);
         }
         #endregion
+
+        #region 5. Get Schedule from to
+        public DataTable getScheduleFromTo(DateTime from, DateTime to)
+        {
+            return dAO_Schedule.getScheduleFromTo(from, to);
+        }
+        #endregion
+
+        #region 6.Show bill
+        public DataTable showBill()
+        {
+            return dAO_Schedule.showBill();
+        }
+        #endregion
+
+        #region 7.Get schedule by CCCD
+        public DataTable getSchedulesByCCCD(string cccd)
+        {
+            return dAO_Schedule.GetScheduleByCCCD(cccd);
+        }
+        #endregion
     }
 }

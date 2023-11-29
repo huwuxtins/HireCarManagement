@@ -13,22 +13,20 @@ namespace DAO
         #region 1. Login Account Employee
         public DataTable loginAccountEmployee(DTO_Employee employee)
         {
-            DataTable dataTable = new DataTable();
-            string statement = "loginAccountEmployee @email";
-            dataTable = DataProvider.Instance.ExecuteStoredProcedureSelect(statement, new object[] { employee.Email });
-            return dataTable;
+            string statement = "loginAccountEmployee @email , @password";
+            return DataProvider.Instance.ExecuteStoredProcedureSelect(statement, new object[] { employee.Email, employee.Password });
         }
         #endregion
 
         #region 2. create account for user
         public void registerAccountEmployee(DTO_Employee employee)
         {
-            string statement = "registerAccountEmployee @ID , @Name , @Email , @Password";
-            DataProvider.Instance.ExecuteStoredProcedure(statement, new object[] { employee.Id, employee.Name, employee.Email, employee.Password });
+            string statement = "registerAccountEmployee @ID , @Name , @Email , @Password , @ROLE";
+            DataProvider.Instance.ExecuteStoredProcedure(statement, new object[] { employee.Id, employee.Name, employee.Email, employee.Password, employee.ROLE});
         }
         #endregion
 
-        #region 6. Check account
+        #region 3. Check account
         public bool checkAccount(DTO_Employee employee)
         {
             string statement = "checkAccountEmployee @Email";
@@ -38,6 +36,22 @@ namespace DAO
                 return true;
             }
             return false;
+        }
+        #endregion
+
+        #region 4. Get all Employee
+        public DataTable getAllEmployee()
+        {
+            string statement = "getAllEmployee";
+            return DataProvider.Instance.ExecuteStoredProcedureSelect(statement);
+        }
+        #endregion
+
+        #region 5. Update Employee
+        public void updateEmployee(DTO_Employee employee)
+        {
+            string statement = "updateAccountEmployee @ID , @Name , @Email , @Password , @ROLE"; 
+            DataProvider.Instance.ExecuteStoredProcedure(statement, new object[] { employee.Id, employee.Name, employee.Email, employee.Password, employee.ROLE });
         }
         #endregion
     }

@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HireCarManagement
+namespace DoubleT.GUI
 {
-    public partial class LoginForm : Form
+    public partial class fCarCondition : Form
     {
-        public LoginForm()
+        public fCarCondition()
         {
             InitializeComponent();
+        }
+
+        private void labelLoaiXe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonXem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

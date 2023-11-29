@@ -13,3 +13,4 @@ D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DAO\obj\Debug\net6
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DAO\bin\Debug\net6.0\DTO.dll
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DAO\bin\Debug\net6.0\DTO.pdb
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DAO\obj\Debug\net6.0\DAO.csproj.CopyComplete
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DAO\obj\Debug\net6.0\DAO.sourcelink.json

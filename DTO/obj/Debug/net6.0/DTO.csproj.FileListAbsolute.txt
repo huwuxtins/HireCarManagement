@@ -10,3 +10,4 @@ D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\refint\DTO.dll
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.pdb
 D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\ref\DTO.dll
+D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\DTO\obj\Debug\net6.0\DTO.sourcelink.json

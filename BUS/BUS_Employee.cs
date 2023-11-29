@@ -24,20 +24,38 @@ namespace BUS
         #region 2. Login Account Employee
         public DTO_Employee loginAccount(DTO_Employee employee)
         {
-            foreach (DataRow row in dAO_employee.loginAccountEmployee(employee).Rows)
+            var employees = dAO_employee.loginAccountEmployee(employee);
+            if(employees != null)
             {
-                employee.Email = row[0].ToString();
-                employee.Name = row[1].ToString();
+                foreach (DataRow row in dAO_employee.loginAccountEmployee(employee).Rows)
+                {
+                    employee.Email = row[0].ToString();
+                    employee.Name = row[1].ToString();
+                    employee.ROLE = row[2].ToString();
+                }
             }
             return employee;
         }
         #endregion
 
-
         #region 3. Check Account employee
         public bool checkAccount(DTO_Employee employee)
         {
             return dAO_employee.checkAccount(employee);
+        }
+        #endregion
+
+        #region 4. Show all employee
+        public DataTable getAllEmployee()
+        {
+            return dAO_employee.getAllEmployee();
+        }
+        #endregion
+
+        #region 5. Update employee
+        public void updateAccout(DTO_Employee employee)
+        {
+            dAO_employee.updateEmployee(employee);
         }
         #endregion
     }

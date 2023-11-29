@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HireCarManagement
+namespace DoubleT.GUI
 {
-    public partial class RegisterForm : Form
+    public partial class fEditCustomer : Form
     {
-        public RegisterForm()
+        public fEditCustomer()
         {
             InitializeComponent();
         }

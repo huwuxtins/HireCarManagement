@@ -35,6 +35,7 @@ namespace BUS
                 customer.PhoneNumber = row[1].ToString();
                 customer.Name = row[2].ToString();
                 customer.Address = row[3].ToString();
+                customer.CCCD = row[4].ToString();
             }
             return customer;
         }
@@ -60,5 +61,22 @@ namespace BUS
             dAO_Customer.deleteAccountCustomer(customer);
         }
         #endregion
+
+        #region 7. Get Customer by CCCD
+        public DTO_Customer getCustomerByCCCD(string cccd)
+        {
+            DTO_Customer customer = new DTO_Customer();
+            foreach (DataRow row in dAO_Customer.getCustomerByCCCD(cccd).Rows)
+            {
+                customer.Id = Guid.Parse(row[0].ToString());
+                customer.PhoneNumber = row[1].ToString();
+                customer.Name = row[2].ToString();
+                customer.Address = row[3].ToString();
+                customer.CCCD = row[4].ToString();
+            }
+            return customer;
+        }
+        #endregion
+
     }
 }

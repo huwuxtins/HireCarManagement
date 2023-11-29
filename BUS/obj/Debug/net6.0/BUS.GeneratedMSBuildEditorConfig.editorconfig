@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BUS
 build_property.ProjectDir = D:\Studying\HKIII_1\Asp.net\Theory\MID_TERM\HireCarManagement\BUS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
